@@ -1,0 +1,289 @@
+.clear{
+    clear: both;
+}
+/********** LOGIN FORM ******************/
+.loginbox.clearfix.onecolumn {
+    background: url([[pix:theme|lb]]);
+    left: 0;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.loginpanel {
+    -webkit-border-radius: 5px;
+    -moz-border-radius:    5px;
+    border-radius: 5px;
+    -moz-box-shadow:     5px 5px 5px 5px #777;
+    -webkit-box-shadow:  5px 5px 5px 5px #777;
+    box-shadow: 5px 5px 5px 5px #777;
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=5,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+    left: 60%;
+    min-height: 300px;
+    padding: 11px;
+    position: relative;
+    width: 38%;
+}
+.loginpanel  h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.loginbox .loginform .form-input input[type="text"], .loginbox .loginform .form-input input[type="password"] {
+    font-size: 12px;
+    height: 30px;
+    line-height: 1;
+    padding: 8px 12px;
+}
+
+/*********************MENU***********************/
+.moodleheader {
+    margin-bottom: 11px;
+}
+/*********************BOXES *****************/
+
+#page-inner{
+    margin: 0 auto;
+    position: relative;
+}
+.six-pages {
+    margin-top: 3em;
+}
+.one_third {
+    width: 30.5%;
+}
+.one_half, .one_third, .two_third, .one_fourth, .one_fifth, .four_fifth, .one_sixth, .five_fifth, .two_fifth, .three_fifth, .three_fourth {
+    position: relative;
+    display:inline;
+    display: inline-block;
+    float: left;
+    margin-right: 4%;
+    margin-bottom:15px;
+}
+.one_third {
+    max-height: 450px;
+    text-align: center;
+    /*width: 28.5%;*/
+     width: 30.3%;
+    margin-right: 3%;
+}
+.one_third p {
+    text-align: justify;
+}
+.animated {
+    -webkit-animation-duration: 1.5s;
+       -moz-animation-duration: 1.5s;
+         -o-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.animated.bounceIn {
+    -webkit-animation-name: bounceIn;
+    -moz-animation-name: bounceIn;
+    -o-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -moz-transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -moz-transform: scale(1.05);
+    }
+
+    70% {
+        -moz-transform: scale(.9);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -o-transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -o-transform: scale(1.05);
+    }
+
+    70% {
+        -o-transform: scale(.9);
+    }
+
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+@media screen and (min-width: 890px) and (max-width: 979px) {
+    .one_third {
+        float: left;
+        margin: 1em;
+        min-height: 470px;
+        width: 30%;
+    }
+     .block .minicalendar th, .block .minicalendar td {
+        font-size: 0.7em;
+        padding: 1px;
+    }
+}  
+
+@media screen and (max-width: 890px) {
+    .six-pages {
+        margin-top: 1em;
+    }
+   .one_third {
+        float: left;
+        margin: 0 1em;
+        width: 44%;
+        min-height: 425px;
+    }  
+    .block .minicalendar th, .block .minicalendar td {
+        font-size: 0.7em;
+        padding: 1px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .six-pages {
+        margin-top: 1em;
+    }
+   .one_third {
+        float: left;
+        margin: 0 1em;
+        min-height: 485px;
+        width: 45%;
+    }
+    /*.loginpanel {
+        left: 30%;
+        width: 71%;
+    } */
+    .loginpanel {
+        left: 0%;
+        width: 100%;
+        padding:5px;
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    }
+     
+}
+@media screen and (max-width: 600px) { 
+    .one_third {
+        float: left;
+        margin: 0 1em;
+         min-height: 500px;
+         width: 43%;
+    } 
+   
+    #page-footer {
+        margin-top: 3em;
+    }  
+}
+@media screen and (max-width: 530px) { 
+    .one_third {
+        float: left;
+        margin: 0 1em;
+         min-height: 550px;
+         width: 43%;
+    } 
+   
+}
+@media screen and (max-width: 480px) {
+    .one_third {
+        float: left;
+        margin: 0 auto;
+        min-height: 350px;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 250px) {
+    .one_third {
+        float: left;
+        margin: 0 auto;
+        min-height: 485px;
+        width: 100%;
+    }
+ 
+}
+/************************FULL SCREEN BUTTON*****************************/
+.moodlezoom {
+     -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-user-select: none;
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, #ffffff 60%, #f5f5f5);
+    background-repeat: no-repeat;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #e6e6e6;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #555555;
+    cursor: pointer;
+    display: inline-block;
+    filter: none;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin: 0 0 3px 5px;
+    padding: 8px 12px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+    white-space: nowrap;
+}
