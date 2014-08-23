@@ -15,18 +15,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Theme newcerulean lib.
+ * Theme newrvs lib.
  *
- * @package    theme_newcerulean
+ * @package    theme_newrvs
  * @copyright  2014 Bas Brands
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-function theme_newcerulean_process_css($css, $theme) {
+function theme_newrvs_process_css($css, $theme) {
 
     // Set the background image for the logo.
     $logo = $theme->setting_file_url('logo', 'logo');
-    $css = theme_newcerulean_set_logo($css, $logo);
+    $css = theme_newrvs_set_logo($css, $logo);
 
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
@@ -34,13 +34,13 @@ function theme_newcerulean_process_css($css, $theme) {
     } else {
         $customcss = null;
     }
-    $css = theme_newcerulean_set_customcss($css, $customcss);
+    $css = theme_newrvs_set_customcss($css, $customcss);
 
     return $css;
 }
 
 
-function theme_newcerulean_set_logo($css, $logo) {
+function theme_newrvs_set_logo($css, $logo) {
     $logotag = '[[setting:logo]]';
     $logoheight = '[[logoheight]]';
     $logowidth = '[[logowidth]]';
@@ -77,9 +77,9 @@ function theme_newcerulean_set_logo($css, $logo) {
  * @param array $options
  * @return bool
  */
-function theme_newcerulean_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_newrvs_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'logo')) {
-        $theme = theme_config::load('newcerulean');
+        $theme = theme_config::load('newrvs');
         return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
     } else {
         send_file_not_found();
@@ -93,7 +93,7 @@ function theme_newcerulean_pluginfile($course, $cm, $context, $filearea, $args, 
  * @param string $customcss The custom CSS to add.
  * @return string The CSS which now contains our custom CSS.
  */
-function theme_newcerulean_set_customcss($css, $customcss) {
+function theme_newrvs_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {

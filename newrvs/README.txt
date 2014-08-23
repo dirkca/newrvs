@@ -1,7 +1,7 @@
 About this theme
 ================
 
-This is Bootswatch newcerulean for the Bootstrap 3 theme for Moodle.
+This is Bootswatch newrvs for the Bootstrap 3 theme for Moodle.
 
 * package   cerulean bootswatch for Bootstrap 3
 * copyright 2014 Bas Brands. www.sonsbeekmedia.nl

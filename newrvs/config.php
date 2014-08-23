@@ -16,22 +16,22 @@
 
 
 
-$THEME->name = 'newcerulean';
+$THEME->name = 'newrvs';
 $THEME->parents = array('bootstrap');
 
 $THEME->doctype = 'html5';
 $THEME->sheets = array('custom','style','component');
-$THEME->lessfile = 'newcerulean';
+$THEME->lessfile = 'newrvs';
 $THEME->parents_exclude_sheets = array('bootstrap' => array('moodle'));
-$THEME->lessvariablescallback = 'theme_newcerulean_less_variables';
-$THEME->extralesscallback = 'theme_newcerulean_extra_less';
+$THEME->lessvariablescallback = 'theme_newrvs_less_variables';
+$THEME->extralesscallback = 'theme_newrvs_extra_less';
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
 $THEME->enable_dock = true;
 $THEME->editor_sheets = array();
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->csspostprocess = 'theme_newcerulean_process_css';
+$THEME->csspostprocess = 'theme_newrvs_process_css';
 $THEME->layouts = array(
     // Most backwards compatible layout without the blocks - this is the layout used by default.
     'base' => array(

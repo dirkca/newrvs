@@ -20,17 +20,17 @@ defined('MOODLE_INTERNAL') || die;
 if ($ADMIN->fulltree) {
 
     // Logo file setting.
-    $name = 'theme_newcerulean/logo';
-    $title = get_string('logo', 'theme_newcerulean');
-    $description = get_string('logodesc', 'theme_newcerulean');
+    $name = 'theme_newrvs/logo';
+    $title = get_string('logo', 'theme_newrvs');
+    $description = get_string('logodesc', 'theme_newrvs');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     // Custom CSS file.
-    $name = 'theme_newcerulean/customcss';
-    $title = get_string('customcss', 'theme_newcerulean');
-    $description = get_string('customcssdesc', 'theme_newcerulean');
+    $name = 'theme_newrvs/customcss';
+    $title = get_string('customcss', 'theme_newrvs');
+    $description = get_string('customcssdesc', 'theme_newrvs');
     $default = '';
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');

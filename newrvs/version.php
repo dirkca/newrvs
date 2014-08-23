@@ -22,7 +22,7 @@ $plugin->version   = 2014051301;
 $plugin->requires  = 2014051200;
 $plugin->release  = 2014051300;
 $plugin->maturity  = MATURITY_BETA;
-$plugin->component = 'theme_newcerulean';
+$plugin->component = 'theme_newrvs';
 $plugin->dependencies = array(
     'theme_bootstrap'  => 2014051300
 );

@@ -9,6 +9,9 @@
     position: relative;
     width: 100%;
 }
+.loginbox.clearfix.onecolumn {
+    background-color:#000000;
+}
 .loginpanel {
     -webkit-border-radius: 5px;
     -moz-border-radius:    5px;
@@ -286,4 +289,23 @@
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     vertical-align: middle;
     white-space: nowrap;
+}
+/***************************NAVBAR******************************/
+.navbar {
+    background-image: linear-gradient(#54b4eb, #0072ae 60%, #0072ae);
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #178acc;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    filter: none;
+}
+.navbar-default {
+    background-color: #0072ae;
+}
+/************************BODY******************************/
+body {
+    color: #555555;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+	background:#000000;
 }
